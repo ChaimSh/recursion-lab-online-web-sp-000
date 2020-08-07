@@ -45,3 +45,14 @@ function maxOf(arr) {
     return Math.max(arr.pop(), maxOf(arr))
   }
 }
+
+function includesNumber(arr, number) {
+  if (arr.length === 0) {
+    return false;
+  } else if (arr[0] === number) {
+    return true;
+  } else {
+     return includesNumber(arr.slice(1), number); 
+  }
+  
+}
