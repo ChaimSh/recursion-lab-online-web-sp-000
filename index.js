@@ -52,7 +52,7 @@ function includesNumber(arr, number) {
   } else if (arr[0] === number) {
     return true;
   } else {
-     return includesNumber(arr.slice(1), number); 
+     return includesNumber(arr.slice(1), number);
   }
-  
+
 }
