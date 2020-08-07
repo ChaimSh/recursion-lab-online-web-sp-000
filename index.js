@@ -37,3 +37,11 @@ function reverseString(string) {
 function addUpTo(myArray, index) {
   return index ? myArray[index] + addUpTo(myArray, --index) : myArray[index];
 }
+
+function maxOf(arr) {
+  if (arr.length === 1) {
+    return arr[0]
+  } else {
+    return Math.max(arr.pop(), maxof(arr))
+  }
+}
